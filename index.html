@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevate Your Craft</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #F5F5F5;
+            color: #333;
+        }
+
+        header {
+            background: #002366;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        .hero {
+            background: url(bg.jpg) no-repeat center center / cover;
+            color: white;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero .cta {
+            padding: 10px 20px;
+            background: #FFD700;
+            color: #002366;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .services, .blog-section, .branches {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            background-color: #F5F5F5;
+            flex-wrap: wrap;
+        }
+
+        .service-item, .blog-item, .branch-item {
+            background-color: #002366;
+            color: white;
+            padding: 20px;
+            flex-basis: 30%;
+            margin: 10px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        /* Image size adjustments */
+        .service-item img {
+            width: 100%;
+            height: auto;
+            max-width: 450px;
+            max-height: 400px;
+        }
+
+        .blog-item img {
+            width: 100%;
+            height: auto;
+            max-width: 450px;
+            max-height: 400px;
+        }
+
+        .branch-item img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            max-height: 200px;
+        }
+
+        .service-item h3, .blog-item h3, .branch-item h3 {
+            color: #FFD700;
+            margin-bottom: 10px;
+        }
+
+        .service-item p, .blog-item p, .branch-item p {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .service-item .cta, .blog-item .cta, .branch-item .cta {
+            background-color: #FFD700;
+            color: #002366;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .service-item:hover, .blog-item:hover, .branch-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .call-to-action {
+            background-color: #002366;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .call-to-action h2 {
+            margin-bottom: 10px;
+        }
+
+        .call-to-action a {
+            color: #002366;
+            padding: 10px 20px;
+            background: #FFD700;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #002366;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer .footer-columns {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px 0;
+        }
+
+        footer .footer-column {
+            flex-basis: 30%;
+            margin: 10px;
+            text-align: left;
+        }
+
+        footer h3 {
+            margin-bottom: 10px;
+            color: #FFD700;
+        }
+
+        footer p, footer a {
+            color: white;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .service-item, .blog-item, .branch-item, .footer-column {
+                flex-basis: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header nav ul {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Elevate Your Craft</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Product Lines">Product Lines</a></li>
+                <li><a href="#About our products">About our Product</a></li>
+                <li><a href="#B2B Bulk orders">B2B Bulk orders</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div>
+            <h1>Welcome to B2B Enquiries</h1>
+            <p>Experience premium linseed prices at cheapest prices with our B2B rates</p>
+        </div>
+    </section>
+
+    <section class="services" id="gadget">
+        <div class="service-item">
+            <img src="oils.png" alt="oils">
+            <h3>Oils</h3>
+            <p>Base Oils are typically oils that are extracted or processed from naturally occurring resources, or variants of those.</p>
+            <a href="#" class="cta">View Product</a>
+        </div>
+        <div class="service-item">
+            <img src="wax oils.png" alt="Wax Oils">
+            <h3>Wax Oils</h3>
+            <p>Wax oils provide an option in which the user gets the goodness of waxes while ease of use of an oil based finish.</p>
+            <a href="#" class="cta">View Product</a>
+        </div>
+        <div class="service-item">
+            <img src="oil blends.png" alt="Oil Blends">
+            <h3>Oil Blends</h>
+            <p>Aeroplane Brand offers a varied range of oil blends, typically a combination of drying and non-drying oils.</p>
+            <a href="#" class="cta">View Product</a>
+        </div>
+        <div class="service-item">
+            <img src="waxes.png" alt="Waxes">
+            <h3>Waxes</h3>
+            <p>Waxes provide a smooth buff-able surface finish compared to oils, typically enhancing the features of the wood.</p>
+            <a href="#" class="cta">View Product</a>
+        </div>
+
+        <div class="service-item">
+            <img src="art.jpg" alt="Art Products">
+            <h3>Art Products</h3>
+            <p>Aeroplane Brand also offers premium linseed oil-based art products that work well with oil colors.</p>
+            <a href="#" class="cta">View Product</a>
+        </div>
+    </section>
+
+    <section class="call-to-action">
+        <h2>Why Us</h2>
+        <p>Enjoy the wonderful feel and premium quality that Aeroplane brand products provide.</p><br>
+        <a href="#">Subscribe Now</a>
+    </section>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3 id="aboutus">About Us</h3>
+                <p>Setting the benchmark for 100 years, Aeroplane brand exudes quality, performance, and convenience built on trust.</p>
+            </div>
+            <div class="footer-column" id="contact">
+                <h3>Customer Service</h3>
+                <p><a href="#">Contact Us</a></p>
+                <p><a href="#">Returns</a></p>
+                <p><a href="#">Privacy Policy</a></p>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <p><a href="#">Facebook</a></p>
+                <p><a href="#">Twitter</a></p>
+                <p><a href="#">Instagram</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
